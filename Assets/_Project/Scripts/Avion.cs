@@ -12,12 +12,11 @@ public class Avion : MonoBehaviour
     [SerializeField] AnimationCurve tilt;
     [SerializeField] float maxTilt = 12f;
     [SerializeField] float maxRoll = 30f;
-    [SerializeField] AltitudeManager altitude;
     float targetRoll = 0f;
 
     private void FixedUpdate()
     {
-        float t = Mathf.Clamp(altitude.CurrentAltitude / 10000, 0f, 1f);
+        float t = Mathf.Clamp(AltitudeManager.instance.CurrentAltitude / 10000, 0f, 1f);
         transform.position += new Vector3(0,0,speed * Time.fixedDeltaTime);
         cam.position = new Vector3(cam.position.x, Mathf.Lerp(0, 100, t), cam.position.z);
         
