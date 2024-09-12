@@ -13,7 +13,7 @@ public class Cloud : MonoBehaviour
     [SerializeField, MinMaxSlider(15.0f, 25.0f)] private Vector2 yRange;
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if(transform.position.z < avion.position.z)
         {
