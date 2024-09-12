@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4638058941626511417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8554957441357592752}
+  - component: {fileID: 3266261316947690487}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8554957441357592752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4638058941626511417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3266261316947690487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4638058941626511417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e731ece2bd6bd8143bd47e2582d01fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+    dictionaryList:
+    - Key: 0
+      Value:
+      - {fileID: 8300000, guid: c094197ef8b584049a919363f447cf0c, type: 3}
+      index: 0
+      isKeyDuplicated: 0
+    - Key: 1
+      Value:
+      - {fileID: 8300000, guid: 013633c3b3695dd42893e6789da92acd, type: 3}
+      index: 1
+      isKeyDuplicated: 0
+    - Key: 2
+      Value:
+      - {fileID: 8300000, guid: 7fecf35e3c68d0f45a648ea87bcc13fa, type: 3}
+      index: 2
+      isKeyDuplicated: 0
+    - Key: 3
+      Value:
+      - {fileID: 8300000, guid: 358a325617149674c90511a13ec60ffd, type: 3}
+      index: 3
+      isKeyDuplicated: 0
+    - Key: 4
+      Value:
+      - {fileID: 8300000, guid: 47a5e22a058f30841bda89711868ce57, type: 3}
+      index: 4
+      isKeyDuplicated: 0
+    - Key: 5
+      Value:
+      - {fileID: 8300000, guid: b6feb4336c8d913469e9b2205830bca5, type: 3}
+      index: 5
+      isKeyDuplicated: 0
+    - Key: 6
+      Value:
+      - {fileID: 8300000, guid: 6cb40d1b1e95e404092ac04eedc139d3, type: 3}
+      index: 6
+      isKeyDuplicated: 0
+    - Key: 7
+      Value:
+      - {fileID: 8300000, guid: f79de2bac6ebcc84db31ae6016f666dd, type: 3}
+      index: 7
+      isKeyDuplicated: 0
+    - Key: 8
+      Value:
+      - {fileID: 8300000, guid: 99078d5018f03f2439180f7f870a56c8, type: 3}
+      - {fileID: 8300000, guid: 37a7653f5cb5f0b45a916dd72b571042, type: 3}
+      - {fileID: 8300000, guid: b8290a12591307043a5eaae741af4652, type: 3}
+      index: 8
+      isKeyDuplicated: 0
+    - Key: 9
+      Value:
+      - {fileID: 8300000, guid: 019cfb9817129ea458b41cb22f7f40a5, type: 3}
+      - {fileID: 8300000, guid: 78a32823074d16e4faa10424c432fd31, type: 3}
+      - {fileID: 8300000, guid: 65a99ca031f9ae040b9cf4021fb06933, type: 3}
+      index: 9
+      isKeyDuplicated: 0
+  SoundsToFadeIn: 0200000000000000
+  SoundsToFadeOut: 02000000
+  SoundsToLoop: 00000000050000000600000007000000
