@@ -8,7 +8,7 @@ namespace Sounds
     public class SoundManager : MonoBehaviour
     {
         public static SoundManager Instance { get; private set; }
-        public SerializableDictionary<SoundType, AudioClip> Sounds = new();
+        public SerializableDictionary<SoundType, AudioClip[]> Sounds = new();
         public List<SoundType> SoundsToFadeIn = new();
         public List<SoundType> SoundsToFadeOut = new();
         public List<SoundType> SoundsToLoop = new();
@@ -34,14 +34,14 @@ namespace Sounds
 
         public void PlaySoundType(SoundType soundType)
         {
-             PlaySound(Sounds[soundType], SoundsToLoop.Contains(soundType), SoundsToFadeIn.Contains(soundType));
+             PlaySound(GetRandomSoundFromType(soundType), SoundsToLoop.Contains(soundType), SoundsToFadeIn.Contains(soundType));
         }
 
         public void StopSoundType(SoundType soundType)
         {
             foreach(AudioSource audioSource in _audioSources)
             {
-                if(audioSource.clip == Sounds[soundType])
+                if(audioSource.clip == GetRandomSoundFromType(soundType))
                 {
                     if (SoundsToFadeOut.Contains(soundType))
                     {
@@ -49,7 +49,10 @@ namespace Sounds
                     }
                     else
                     {
-                        audioSource.Stop();
+                        if (audioSource.loop)
+                        {
+                            audioSource.loop = false;
+                        }else audioSource.Stop();
                     }
                 }
             }
@@ -83,6 +86,11 @@ namespace Sounds
             }
             return CreateAudioSource();
         }
+
+        private AudioClip GetRandomSoundFromType(SoundType soundType)
+        {
+            return Sounds[soundType][Random.Range(0, Sounds[soundType].Length)];
+        }
         
         IEnumerator FadeOut(float delay, float duration, AudioSource audioSource) 
         {
@@ -114,8 +122,14 @@ namespace Sounds
     public enum SoundType
     {
         PlaneNoise,
-        PlaneDing,
+        PlaneHotess,
         AlertCrash,
         WindshieldWiper,
+        PlaneDepressure,
+        LongIntervalBip,
+        MediumIntervalBip,
+        ShortIntervalBip,
+        MiniGameFailure,
+        MiniGameSuccess,
     }
 }
