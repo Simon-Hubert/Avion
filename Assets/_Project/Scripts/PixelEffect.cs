@@ -9,7 +9,6 @@ using UnityEngine.Rendering.PostProcessing;
 [PostProcess(typeof(PixelEffectRenderer), PostProcessEvent.AfterStack, "Custom/Pixel")]
 public sealed class PixelEffect : PostProcessEffectSettings
 {
-    [Range(0,50)]
     public FloatParameter factor = new FloatParameter { value = 0f };
 }
 
