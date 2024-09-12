@@ -18,7 +18,7 @@ MonoBehaviour:
     value: 1
   factor:
     overrideState: 1
-    value: 88.42
+    value: 170
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
