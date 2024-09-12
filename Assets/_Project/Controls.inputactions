@@ -137,6 +137,39 @@
                 },
                 {
                     "name": "",
+                    "id": "5b465050-9dac-4203-9d72-8c7f324f9c65",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QTEButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a97456a-7972-4c36-9360-b44dbc1b492e",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QTEButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "58dc4ce4-e20d-4ce7-bb64-26ad0648f37a",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QTEButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "7e570450-cef2-465f-9413-4ff7e0b78d40",
                     "path": "<Keyboard>/1",
                     "interactions": "",
