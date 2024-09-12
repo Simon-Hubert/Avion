@@ -6,9 +6,22 @@ using NaughtyAttributes;
 
 public class FeedbackManager : MonoBehaviour
 {
+    public static FeedbackManager instance;
+
+
     [SerializeField] float duration = 0.5f;
     PostProcessVolume volume;
     Vignette vignette;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogError("plus d'une instance de FeedbackManager dans la scene");
+            return;
+        }
+        instance = this;
+    }
 
     private void Start()
     {

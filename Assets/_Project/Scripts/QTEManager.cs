@@ -14,6 +14,8 @@ public class QTEManager : MonoBehaviour
     [SerializeField] private GameObject _successUI;
     [SerializeField] private GameObject _failureUI;
 
+    [SerializeField] private Avion _avion;
+
     private InputAction _qteAction;
     //private string[] _possibleKeys = { "a", "w", "e", "space", "up", "down", "left", "right", "buttonSouth", "buttonEast", "dpad/up" };  // Les touches possibles (clavier et manette)
     //private string[] _possibleKeys = {"buttonSouth", "buttonEast"};  // Les touches possibles (clavier et manette)
@@ -90,6 +92,9 @@ public class QTEManager : MonoBehaviour
         _successUI.SetActive(true);
         _failureUI.SetActive(false);
         Debug.Log("QTE Success!");
+        FeedbackManager.instance.Success();
+        _avion.Stabilize();
+        StartCoroutine(AltitudeManager.instance.UpAltitudeCoroutine());
         yield return new WaitForSeconds(3f);
         _successUI.SetActive(false);
         _qteText.text = "";
@@ -102,6 +107,8 @@ public class QTEManager : MonoBehaviour
         _successUI.SetActive(false);
         _failureUI.SetActive(true);
         Debug.Log("QTE Failed!");
+        FeedbackManager.instance.Failure();
+        _avion.Stabilize();
         yield return new WaitForSeconds(3f);
         _failureUI.SetActive(false);
         _qteText.text = "";
@@ -137,11 +144,13 @@ public class QTEManager : MonoBehaviour
             case 0:
                 //on penche sur la gauche
                 _qteText.text = "On penche sur la gauche!";
+                _avion.Roll(false);
                 _selectedKey = "right";
                 break;
             case 1:
                 //on penche sur la droite
                 _qteText.text = "On penche sur la droite!";
+                _avion.Roll(true);
                 _selectedKey = "left";
                 break;
         }

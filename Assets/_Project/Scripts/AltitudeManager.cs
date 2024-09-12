@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class AltitudeManager : MonoBehaviour
@@ -35,6 +36,7 @@ public class AltitudeManager : MonoBehaviour
     private void Start()
     {
         CurrentAltitude = _startingAltitude;
+        StartFalling();
     }
 
     private void Update()
@@ -78,6 +80,13 @@ public class AltitudeManager : MonoBehaviour
         _isGoingUp = true;
     }
 
+    public IEnumerator UpAltitudeCoroutine()
+    {
+        StartGoingUp();
+        yield return new WaitForSeconds(3f);
+        StartFalling();
+    }    
+ 
     private void DisplayAltitude(int displayedAltitude)
     {
         _altitudeText.text = displayedAltitude.ToString() + "m";

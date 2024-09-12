@@ -900,6 +900,7 @@ MonoBehaviour:
   _qteDuration: 5
   _successUI: {fileID: 241661803}
   _failureUI: {fileID: 935228611}
+  _avion: {fileID: 1889437678}
 --- !u!4 &1076036095
 Transform:
   m_ObjectHideFlags: 0
@@ -1000,6 +1001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548181648}
   - component: {fileID: 1548181647}
+  - component: {fileID: 1548181649}
   m_Layer: 6
   m_Name: PPvolume
   m_TagString: Untagged
@@ -1039,6 +1041,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1548181649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548181646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6e4339e0eaa264daca07fb5c20a7a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1.75
 --- !u!1 &1587846400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,7 +1100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startingAltitude: 10000
   _displayedAltitude: 0
-  _crashSpeed: 100
+  _crashSpeed: 500
   _riseSpeed: 100
   _altitudeText: {fileID: 2050779498}
 --- !u!1 &1730900664
@@ -1186,6 +1201,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Avion
       objectReference: {fileID: 0}
+    - target: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1889437677}
+    - target: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+      propertyPath: maxTilt
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+      propertyPath: rollSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+      propertyPath: tilt.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+      propertyPath: tilt.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+      propertyPath: tilt.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+      propertyPath: tilt.m_Curve.Array.data[0].inSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+      propertyPath: tilt.m_Curve.Array.data[0].outSlope
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1201,6 +1248,22 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 7907805958292124762, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
   m_PrefabInstance: {fileID: 1889437674}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1889437677 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4825200973682041114, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+  m_PrefabInstance: {fileID: 1889437674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1889437678 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7002882914360346108, guid: 94e0e5766d0556f48b2f5b2ee890b243, type: 3}
+  m_PrefabInstance: {fileID: 1889437674}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff5b5eaeb04e124da23fe396aaf5cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1940998105
 GameObject:
   m_ObjectHideFlags: 0
