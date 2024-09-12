@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,6 +45,16 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(2);
                 break;
         }
+    }
+
+    public IEnumerator LaunchLeaderBoard(GameObject finalScoreText)
+    {
+        finalScoreText.SetActive(true);
+        finalScoreText.GetComponent<TextMeshProUGUI>().text = "Final score : " + DistanceManager.instance._distance;
+        yield return new WaitForSeconds(4f);
+        finalScoreText.GetComponent<TextMeshProUGUI>().text = "";
+        finalScoreText.SetActive(false);
+        ChangeGameState(2);
     }
 
     public enum GameState

@@ -8,7 +8,7 @@ public class DistanceManager : MonoBehaviour
 {
     public static DistanceManager instance;
 
-    [SerializeField] private int _distance;
+    public int _distance;
     [SerializeField] private float _speed = 1f;
     private int _threshold = 1;
 

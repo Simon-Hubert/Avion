@@ -17,14 +17,9 @@ public class LeaderboardManager : MonoBehaviour
         }
         instance = this;
     }
-    void Start()
+    
+    public void LaunchGame()
     {
-        StartCoroutine(RestartGameCoroutine());
-    }
-
-    private IEnumerator RestartGameCoroutine()
-    {
-        yield return new WaitForSeconds(_timeBeforeNewGame);
         GameManager.instance.ChangeGameState(1);
     }
 }
