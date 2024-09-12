@@ -65,7 +65,7 @@ public class AltitudeManager : MonoBehaviour
         }
         CurrentAltitude = Mathf.Min( CurrentAltitude, _startingAltitude );
         _displayedAltitude = Mathf.FloorToInt(CurrentAltitude);
-        DisplayAltitude(_displayedAltitude);
+        //DisplayAltitude(_displayedAltitude);
     }
 
     public void StartFalling()

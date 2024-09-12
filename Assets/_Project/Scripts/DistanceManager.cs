@@ -33,7 +33,7 @@ public class DistanceManager : MonoBehaviour
         if(_distance >= 5000 * _threshold)
         {
             _threshold++;
-            onThresholdPass.Invoke(_distance);
+            onThresholdPass?.Invoke(_distance);
         }
     }
 }
