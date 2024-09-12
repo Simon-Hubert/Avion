@@ -43,13 +43,16 @@ public class EventManager : MonoBehaviour
         switch (eventNumber)
         {
             case 0:
+                //Evenement IRL
                 StartQTE("buttonSouth");
                 break;
             case 1:
-                StartQTE("buttonEast");
+                //Gyroscope
+                StartQTEGyroscope();
                 break;
             case 2:
-                StartQTE("buttonNorth");
+                //BlueRed
+                StartBlueRedQTE();
                 break;
             case 3:
                 StartQTE("buttonWest");
@@ -64,4 +67,17 @@ public class EventManager : MonoBehaviour
     {
         QTEManager.instance.StartQTEWithKey(keyToPress);
     }
+
+    private void StartQTEGyroscope()
+    {
+        int randomValue = Random.Range(0, 2);
+        QTEManager.instance.StartQTEGyroscope(randomValue);
+    }
+
+    private void StartBlueRedQTE()
+    {
+        int randomValue = Random.Range(0, 2);
+        QTEManager.instance.StartBlueRedQTE(randomValue);
+    }
+
 }

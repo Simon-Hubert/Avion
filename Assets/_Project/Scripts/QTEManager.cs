@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using System.Xml.Xsl;
 
 public class QTEManager : MonoBehaviour
 {
@@ -52,7 +53,7 @@ public class QTEManager : MonoBehaviour
             if (CheckKeyPress())
             {
                 StartCoroutine(QTESuccess());
-            }
+            } 
         }
     }
 
@@ -68,6 +69,14 @@ public class QTEManager : MonoBehaviour
                 return _qteAction.triggered && Gamepad.current.buttonSouth.wasPressedThisFrame;
             case "buttonEast":
                 return _qteAction.triggered && Gamepad.current.buttonEast.wasPressedThisFrame;
+            case "left":
+                return _qteAction.triggered && Keyboard.current.leftArrowKey.wasPressedThisFrame;
+            case "right":
+                return _qteAction.triggered && Keyboard.current.rightArrowKey.wasPressedThisFrame;
+            case "b":
+                return _qteAction.triggered && Keyboard.current.bKey.wasPressedThisFrame;
+            case "r":
+                return _qteAction.triggered && Keyboard.current.rKey.wasPressedThisFrame;
             // Ajouter d'autres cas si nécessaire
             default:
                 return false;
@@ -119,4 +128,43 @@ public class QTEManager : MonoBehaviour
         StartCoroutine(QTETimer());
     }
 
+    public void StartQTEGyroscope(int randomValue)
+    {
+        _qteCompleted = false;
+        _qteActive = true;
+        switch (randomValue)
+        {
+            case 0:
+                //on penche sur la gauche
+                _qteText.text = "On penche sur la gauche!";
+                _selectedKey = "right";
+                break;
+            case 1:
+                //on penche sur la droite
+                _qteText.text = "On penche sur la droite!";
+                _selectedKey = "left";
+                break;
+        }
+        StartCoroutine(QTETimer());
+    }
+
+    public void StartBlueRedQTE(int randomValue)
+    {
+        _qteCompleted = false;
+        _qteActive = true;
+        switch (randomValue)
+        {
+            case 0:
+                //blue
+                _qteText.text = "Bleu";
+                _selectedKey = "b";
+                break;
+            case 1:
+                //red
+                _qteText.text = "Rouge";
+                _selectedKey = "r";
+                break;
+        }
+        StartCoroutine(QTETimer());
+    }
 }

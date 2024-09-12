@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,8 +15,12 @@ public class AltitudeManager : MonoBehaviour
     [SerializeField] private float _crashSpeed = 1f;
     [SerializeField] private float _riseSpeed = 1f;
 
+    [SerializeField] private TextMeshProUGUI _altitudeText;
+
     private bool _isFalling = false;
     private bool _isGoingUp = false;
+
+    public float CurrentAltitude { get => _currentAltitude; private set => _currentAltitude = value; }
 
     private void Awake()
     {
@@ -29,7 +34,7 @@ public class AltitudeManager : MonoBehaviour
 
     private void Start()
     {
-        _currentAltitude = _startingAltitude;
+        CurrentAltitude = _startingAltitude;
     }
 
     private void Update()
@@ -44,19 +49,21 @@ public class AltitudeManager : MonoBehaviour
         }
         if (_isFalling)
         {
-            _currentAltitude -= _crashSpeed * Time.deltaTime;
-            if (_currentAltitude <= 0)
+            CurrentAltitude -= _crashSpeed * Time.deltaTime;
+            if (CurrentAltitude <= 0)
             {
-                _currentAltitude = 0;
+                CurrentAltitude = 0;
                 _isFalling = false;
                 GameManager.instance.ChangeGameState(2);
             }
         }
         else if (_isGoingUp)
         {
-            _currentAltitude += _riseSpeed * Time.deltaTime;
+            CurrentAltitude += _riseSpeed * Time.deltaTime;
         }
-        _displayedAltitude = Mathf.FloorToInt(_currentAltitude);
+        CurrentAltitude = Mathf.Min( CurrentAltitude, _startingAltitude );
+        _displayedAltitude = Mathf.FloorToInt(CurrentAltitude);
+        DisplayAltitude(_displayedAltitude);
     }
 
     public void StartFalling()
@@ -69,5 +76,10 @@ public class AltitudeManager : MonoBehaviour
     {
         _isFalling = false;
         _isGoingUp = true;
+    }
+
+    private void DisplayAltitude(int displayedAltitude)
+    {
+        _altitudeText.text = displayedAltitude.ToString() + "m";
     }
 }
