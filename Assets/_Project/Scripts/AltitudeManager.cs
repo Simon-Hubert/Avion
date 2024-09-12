@@ -17,6 +17,8 @@ public class AltitudeManager : MonoBehaviour
     private bool _isFalling = false;
     private bool _isGoingUp = false;
 
+    public float CurrentAltitude { get => _currentAltitude; private set => _currentAltitude = value; }
+
     private void Awake()
     {
         if (instance != null)
@@ -29,7 +31,7 @@ public class AltitudeManager : MonoBehaviour
 
     private void Start()
     {
-        _currentAltitude = _startingAltitude;
+        CurrentAltitude = _startingAltitude;
     }
 
     private void Update()
@@ -44,19 +46,19 @@ public class AltitudeManager : MonoBehaviour
         }
         if (_isFalling)
         {
-            _currentAltitude -= _crashSpeed * Time.deltaTime;
-            if (_currentAltitude <= 0)
+            CurrentAltitude -= _crashSpeed * Time.deltaTime;
+            if (CurrentAltitude <= 0)
             {
-                _currentAltitude = 0;
+                CurrentAltitude = 0;
                 _isFalling = false;
                 GameManager.instance.ChangeGameState(2);
             }
         }
         else if (_isGoingUp)
         {
-            _currentAltitude += _riseSpeed * Time.deltaTime;
+            CurrentAltitude += _riseSpeed * Time.deltaTime;
         }
-        _displayedAltitude = Mathf.FloorToInt(_currentAltitude);
+        _displayedAltitude = Mathf.FloorToInt(CurrentAltitude);
     }
 
     public void StartFalling()
