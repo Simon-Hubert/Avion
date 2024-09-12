@@ -58,6 +58,10 @@ MonoBehaviour:
       Value: {fileID: 8300000, guid: 7fecf35e3c68d0f45a648ea87bcc13fa, type: 3}
       index: 2
       isKeyDuplicated: 0
+    - Key: 3
+      Value: {fileID: 8300000, guid: 358a325617149674c90511a13ec60ffd, type: 3}
+      index: 3
+      isKeyDuplicated: 0
   SoundsToFadeIn: 0200000000000000
   SoundsToFadeOut: 02000000
   SoundsToLoop: 00000000

@@ -116,5 +116,6 @@ namespace Sounds
         PlaneNoise,
         PlaneDing,
         AlertCrash,
+        WindshieldWiper,
     }
 }
