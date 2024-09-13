@@ -55,6 +55,7 @@ public class NumpadManager : MonoBehaviour
     {
         NumpadButton randomButton = numpadButtons[Random.Range(0, numpadButtons.Length)];
         randomButton.isOn = true;
+        Invoke(nameof(TooManyTime), 10f);
     }
 
     public bool IsThereAButtonTurnedOn()
@@ -76,6 +77,16 @@ public class NumpadManager : MonoBehaviour
         foreach (NumpadButton numpadButton in numpadButtons)
         {
             numpadButton.isOn = false;
+        }
+    }
+
+    private void TooManyTime()
+    {
+        if (IsThereAButtonTurnedOn())
+        {
+            FeedbackManager.instance.Failure();
+            StartCoroutine(AltitudeManager.instance.DownAltitudeCoroutine());
+            NumpadManager.Instance.TurnOffButton();
         }
     }
 }
