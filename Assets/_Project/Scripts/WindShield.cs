@@ -74,5 +74,6 @@ public class WindShield : MonoBehaviour
             yield return 0;
         }
         _amount = 0;
+        wiping = false;
     }
 }
