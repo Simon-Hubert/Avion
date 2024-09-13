@@ -44,7 +44,7 @@ public class EventManager : MonoBehaviour
     private void TriggerEvent(int eventNumber)
     {
         _canLaunchEvent = false;
-        Debug.Log("Événement " + eventNumber + " déclenché");
+        Debug.Log("ï¿½vï¿½nement " + eventNumber + " dï¿½clenchï¿½");
         switch (eventNumber)
         {
             case 0:
@@ -62,8 +62,11 @@ public class EventManager : MonoBehaviour
             case 3:
                 StartPowerLevelQTE();
                 break;
+            case 4:
+                StartNumpad();
+                break;
             default:
-                Debug.LogWarning("Aucun événement assigné à cette touche.");
+                Debug.LogWarning("Aucun ï¿½vï¿½nement assignï¿½ ï¿½ cette touche.");
                 break;
         }
     }
@@ -97,4 +100,8 @@ public class EventManager : MonoBehaviour
         PowerManager.instance.StartPowerGame(randomValue);
     }
 
+    private void StartNumpad()
+    {
+        NumpadManager.Instance.ChooseButton();
+    }
 }

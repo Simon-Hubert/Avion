@@ -11,6 +11,7 @@ namespace _Project.Scripts
         private Sprite onSprite;
         private Sprite offSprite;
         private Sprite pressedSprite;
+        private Sprite pressedOffSprite;
         private Image _image;
 
         public InputActionReference InputActionReference;
@@ -32,23 +33,32 @@ namespace _Project.Scripts
             this.onSprite = Resources.Load<Sprite>("boutons_on");
             this.offSprite = Resources.Load<Sprite>("boutons_off");
             this.pressedSprite = Resources.Load<Sprite>("boutons_press");
+            this.pressedOffSprite = Resources.Load<Sprite>("boutons_press_off");
         }
 
         public void PressDown()
         {
-            _image.sprite = pressedSprite;
+            _image.sprite = _isOn ? pressedSprite : pressedOffSprite;
         }
         
         public void PressUp()
         {   
             if (_isOn)
             {
-                SoundManager.Instance.PlaySoundType(SoundType.MiniGameSuccess);
+                //SUCCESS
+                FeedbackManager.instance.Success();
+                StartCoroutine(AltitudeManager.instance.UpAltitudeCoroutine());
                 _isOn = false;
             }
             else
             {
-                SoundManager.Instance.PlaySoundType(SoundType.MiniGameFailure);
+                if (NumpadManager.Instance.IsThereAButtonTurnedOn())
+                {
+                    //FAILED
+                    FeedbackManager.instance.Failure();
+                    StartCoroutine(AltitudeManager.instance.DownAltitudeCoroutine());
+                    NumpadManager.Instance.TurnOffButton();
+                }
             }
             _image.sprite = _isOn ? onSprite : offSprite;
         }
