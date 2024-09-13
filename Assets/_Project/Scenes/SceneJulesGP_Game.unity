@@ -734,6 +734,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3266261316947690487, guid: 777ff895f25992942aa47fed25ab0d1e, type: 3}
+      propertyPath: Volume.dictionaryList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266261316947690487, guid: 777ff895f25992942aa47fed25ab0d1e, type: 3}
+      propertyPath: Volume.dictionaryList.Array.data[0].Key
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266261316947690487, guid: 777ff895f25992942aa47fed25ab0d1e, type: 3}
+      propertyPath: Volume.dictionaryList.Array.data[1].Key
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266261316947690487, guid: 777ff895f25992942aa47fed25ab0d1e, type: 3}
+      propertyPath: Volume.dictionaryList.Array.data[0].Value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266261316947690487, guid: 777ff895f25992942aa47fed25ab0d1e, type: 3}
+      propertyPath: Volume.dictionaryList.Array.data[1].Value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266261316947690487, guid: 777ff895f25992942aa47fed25ab0d1e, type: 3}
+      propertyPath: Volume.dictionaryList.Array.data[1].index
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266261316947690487, guid: 777ff895f25992942aa47fed25ab0d1e, type: 3}
+      propertyPath: Volume.dictionaryList.Array.data[1].isKeyDuplicated
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4638058941626511417, guid: 777ff895f25992942aa47fed25ab0d1e, type: 3}
       propertyPath: m_Name
       value: SoundManager
@@ -2110,7 +2138,7 @@ MonoBehaviour:
   - {fileID: 1753222806}
   - {fileID: 36509249}
   - {fileID: 1191076393}
-  _powerGameTime: 5
+  _powerGameTime: 3
 --- !u!1 &1191076393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,7 +2810,7 @@ MonoBehaviour:
   _crashSpeed: 200
   _malusCrashSpeed: 700
   _riseSpeed: 350
-  _finalScoreText: {fileID: 0}
+  _finalScoreText: {fileID: 764404990}
   _altitudeText: {fileID: 2050779498}
 --- !u!1 &1667863136
 GameObject:
@@ -3212,19 +3240,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-'
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 49db4e65fa88df64aa5d019ac8f7ec80, type: 2}
+  m_sharedMaterial: {fileID: 3247631034621541489, guid: 49db4e65fa88df64aa5d019ac8f7ec80, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3241,8 +3267,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3882,8 +3908,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 5
+  m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4301,7 +4327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7215378240057913388, guid: d28142270ed8b964da1e58e1ae3ba16e, type: 3}
       propertyPath: _lightGameTime
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

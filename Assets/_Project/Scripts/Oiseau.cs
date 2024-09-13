@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
+using Sounds;
 using UnityEngine.UI;
 using TMPro;
 
@@ -26,7 +27,8 @@ public class Oiseau : MonoBehaviour
     {
         animator.enabled = true;
         animator.SetTrigger("Oiseau");
-        dist.SetText(Mathf.FloorToInt(distance/1000).ToString() + " km");
+        dist.SetText(Mathf.FloorToInt(distance/1609).ToString() + " mi");
+        SoundManager.Instance.PlaySoundType(SoundType.SeagullScream);
     }
 
     [Button]

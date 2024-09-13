@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using ProjectTools;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ namespace Sounds
         public List<SoundType> SoundsToFadeIn = new();
         public List<SoundType> SoundsToFadeOut = new();
         public List<SoundType> SoundsToLoop = new();
+        public SerializableDictionary<SoundType, float> Volume = new();
         
         private List<AudioSource> _audioSources = new();
 
@@ -34,7 +36,7 @@ namespace Sounds
 
         public void PlaySoundType(SoundType soundType)
         {
-             PlaySound(GetRandomSoundFromType(soundType), SoundsToLoop.Contains(soundType), SoundsToFadeIn.Contains(soundType));
+             PlaySound(GetRandomSoundFromType(soundType), SoundsToLoop.Contains(soundType), SoundsToFadeIn.Contains(soundType), Volume.ContainsKey(soundType) ? Volume[soundType] : 1);
         }
 
         public void StopSoundType(SoundType soundType)
@@ -52,9 +54,26 @@ namespace Sounds
                         if (audioSource.loop)
                         {
                             audioSource.loop = false;
+                            StartCoroutine(FadeOut(0, 1, audioSource));
                         }else audioSource.Stop();
                     }
                 }
+            }
+        }
+        
+        public void PlayIfNotPlaying(SoundType soundType)
+        {
+            bool isPlaying = false;
+            foreach(AudioSource audioSource in _audioSources)
+            {
+                if(audioSource.clip == GetRandomSoundFromType(soundType))
+                {
+                    isPlaying = audioSource.isPlaying;
+                }
+            }
+            if (!isPlaying)
+            {
+                PlaySoundType(soundType);
             }
         }
 
@@ -65,11 +84,12 @@ namespace Sounds
             return audioSource;
         }
 
-        private void PlaySound(AudioClip clip, bool loop = false, bool fadeIn = false)
+        private void PlaySound(AudioClip clip, bool loop = false, bool fadeIn = false, float volume = 1)
         {
             AudioSource audioSource = GetFreeAudioSource();
             audioSource.clip = clip;
             audioSource.loop = loop;
+            audioSource.volume = volume;
             if(fadeIn)
             {
                 StartCoroutine(FadeIn(audioSource, 1));
@@ -124,6 +144,7 @@ namespace Sounds
         PlaneNoise,
         PlaneHotess,
         AlertCrash,
+        CrashExplode,
         WindshieldWiper,
         PlaneDepressure,
         LongIntervalBip,
@@ -131,5 +152,6 @@ namespace Sounds
         ShortIntervalBip,
         MiniGameFailure,
         MiniGameSuccess,
+        SeagullScream
     }
 }

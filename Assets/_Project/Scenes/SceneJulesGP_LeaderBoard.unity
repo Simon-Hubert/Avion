@@ -634,7 +634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeBeforeNewGame: 10
-  text: {fileID: 0}
+  text: {fileID: 1290312270}
 --- !u!4 &1303998732
 Transform:
   m_ObjectHideFlags: 0

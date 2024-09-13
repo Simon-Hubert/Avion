@@ -52,7 +52,8 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator LaunchLeaderBoard(GameObject blackScreen)
     {
-        SoundManager.Instance.PlaySoundType(SoundType.AlertCrash);
+        SoundManager.Instance.StopSoundType(SoundType.AlertCrash);
+        SoundManager.Instance.PlaySoundType(SoundType.CrashExplode);
         _score = DistanceManager.instance._distance;
         blackScreen.SetActive(true);
         yield return new WaitForSeconds(2.5f);

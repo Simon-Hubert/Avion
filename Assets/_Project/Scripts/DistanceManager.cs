@@ -30,7 +30,7 @@ public class DistanceManager : MonoBehaviour
     {
         _elapsedTime += Time.deltaTime;
         _distance = Mathf.FloorToInt(_elapsedTime * _speed);
-        if(_distance >= 5000 * _threshold)
+        if(_distance >= 7500 * _threshold)
         {
             _threshold++;
             onThresholdPass?.Invoke(_distance);

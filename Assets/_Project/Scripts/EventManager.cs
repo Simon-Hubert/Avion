@@ -44,7 +44,7 @@ public class EventManager : MonoBehaviour
 
     private void TriggerEvent(int eventNumber)
     {
-        _canLaunchEvent = false;
+        //_canLaunchEvent = false;
         Debug.Log("�v�nement " + eventNumber + " d�clench�");
         switch (eventNumber)
         {

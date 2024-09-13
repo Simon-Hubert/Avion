@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using NaughtyAttributes;
+using Sounds;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
@@ -68,6 +69,7 @@ public class WindShield : MonoBehaviour
     IEnumerator Wipe() {
         float t = 0f;
         float startAmount = _amount;
+        SoundManager.Instance.PlaySoundType(SoundType.WindshieldWiper);
         while (t < 3) {
             _amount = Mathf.Lerp(startAmount, 0, t/3);
             t += Time.deltaTime;

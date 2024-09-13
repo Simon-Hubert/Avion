@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Sounds;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -51,11 +52,18 @@ public class AltitudeManager : MonoBehaviour
                 CurrentAltitude = 0;
                 _isFalling = false;
                 StartCoroutine(GameManager.instance.LaunchLeaderBoard(_finalScoreText));
+            }else if (CurrentAltitude <= 1000)
+            {
+                SoundManager.Instance.PlayIfNotPlaying(SoundType.AlertCrash);
             }
         }
         else if (_isGoingUp)
         {
             CurrentAltitude += _riseSpeed * Time.deltaTime;
+            if (CurrentAltitude >= 1000)
+            {
+                SoundManager.Instance.StopSoundType(SoundType.AlertCrash);
+            }
         }
         CurrentAltitude = Mathf.Min( CurrentAltitude, _startingAltitude );
         _displayedAltitude = Mathf.FloorToInt(CurrentAltitude);
@@ -91,6 +99,6 @@ public class AltitudeManager : MonoBehaviour
 
     private void DisplayAltitude(int displayedAltitude)
     {
-        _altitudeText.text = displayedAltitude.ToString() + "m";
+        _altitudeText.text = Mathf.FloorToInt(displayedAltitude*3.281f).ToString() + "ft";
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -18,10 +19,13 @@ public class LeaderboardManager : MonoBehaviour
             return;
         }
         instance = this;
-
-        text.SetText("Your Score : " + GameManager.instance._score.ToString() + " m");
     }
-    
+
+    private void Start()
+    {
+        text.SetText("Your Score : " + Mathf.FloorToInt(GameManager.instance._score/1609).ToString() + " miles");
+    }
+
     public void LaunchGame()
     {
         GameManager.instance.ChangeGameState(1);

@@ -61,45 +61,73 @@ MonoBehaviour:
       - {fileID: 8300000, guid: 7fecf35e3c68d0f45a648ea87bcc13fa, type: 3}
       index: 2
       isKeyDuplicated: 0
-    - Key: 3
+    - Key: 4
       Value:
       - {fileID: 8300000, guid: 358a325617149674c90511a13ec60ffd, type: 3}
       index: 3
       isKeyDuplicated: 0
-    - Key: 4
+    - Key: 5
       Value:
       - {fileID: 8300000, guid: 47a5e22a058f30841bda89711868ce57, type: 3}
       index: 4
       isKeyDuplicated: 0
-    - Key: 5
+    - Key: 6
       Value:
       - {fileID: 8300000, guid: b6feb4336c8d913469e9b2205830bca5, type: 3}
       index: 5
       isKeyDuplicated: 0
-    - Key: 6
+    - Key: 7
       Value:
       - {fileID: 8300000, guid: 6cb40d1b1e95e404092ac04eedc139d3, type: 3}
       index: 6
       isKeyDuplicated: 0
-    - Key: 7
+    - Key: 8
       Value:
       - {fileID: 8300000, guid: f79de2bac6ebcc84db31ae6016f666dd, type: 3}
       index: 7
       isKeyDuplicated: 0
-    - Key: 8
+    - Key: 9
       Value:
       - {fileID: 8300000, guid: 99078d5018f03f2439180f7f870a56c8, type: 3}
       - {fileID: 8300000, guid: 37a7653f5cb5f0b45a916dd72b571042, type: 3}
       - {fileID: 8300000, guid: b8290a12591307043a5eaae741af4652, type: 3}
       index: 8
       isKeyDuplicated: 0
-    - Key: 9
+    - Key: 10
       Value:
       - {fileID: 8300000, guid: 019cfb9817129ea458b41cb22f7f40a5, type: 3}
       - {fileID: 8300000, guid: 78a32823074d16e4faa10424c432fd31, type: 3}
       - {fileID: 8300000, guid: 65a99ca031f9ae040b9cf4021fb06933, type: 3}
       index: 9
       isKeyDuplicated: 0
+    - Key: 3
+      Value:
+      - {fileID: 8300000, guid: afc959779285cfe4790bbcc93c212702, type: 3}
+      index: 10
+      isKeyDuplicated: 0
+    - Key: 11
+      Value:
+      - {fileID: 8300000, guid: 6c5debc1eee3cfc44b9c153345f38c31, type: 3}
+      index: 11
+      isKeyDuplicated: 0
   SoundsToFadeIn: 0200000000000000
   SoundsToFadeOut: 02000000
   SoundsToLoop: 00000000050000000600000007000000
+  Volume:
+    dictionaryList:
+    - Key: 9
+      Value: 0.2
+      index: 0
+      isKeyDuplicated: 0
+    - Key: 10
+      Value: 0.2
+      index: 1
+      isKeyDuplicated: 0
+    - Key: 3
+      Value: 0.7
+      index: 2
+      isKeyDuplicated: 0
+    - Key: 2
+      Value: 0.7
+      index: 3
+      isKeyDuplicated: 0
