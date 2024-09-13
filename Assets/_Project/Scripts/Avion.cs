@@ -7,7 +7,7 @@ using NaughtyAttributes;
 
 public class Avion : MonoBehaviour
 {
-
+    public static Avion instance;
     [SerializeField] float speed;
     [SerializeField] float rollSpeed;
     [SerializeField] Transform cam;
@@ -18,6 +18,15 @@ public class Avion : MonoBehaviour
     [SerializeField] private List<Sprite> _mancheSprites;
     float targetRoll = 0f;
 
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogError("plus d'une instance d'Avion dans la scene");
+            return;
+        }
+        instance = this;
+    }
 
     private void FixedUpdate()
     {

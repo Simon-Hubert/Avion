@@ -7,15 +7,13 @@ using UnityEngine.UIElements;
 
 public class Cloud : MonoBehaviour
 {
-    [SerializeField] Transform avion;
-
     [SerializeField, MinMaxSlider(30.0f, 70.0f)] private Vector2 xzRange;
     [SerializeField, MinMaxSlider(15.0f, 25.0f)] private Vector2 yRange;
 
 
     private void FixedUpdate()
     {
-        if(transform.position.z < avion.position.z)
+        if(transform.position.z < Avion.instance.transform.position.z)
         {
             ResetCloud();
         }

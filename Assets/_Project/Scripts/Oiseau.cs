@@ -9,11 +9,7 @@ public class Oiseau : MonoBehaviour
 {
     [SerializeField] Animator animator;
     [SerializeField] TMP_Text dist;
-
-    private void OnEnable()
-    {
-        DistanceManager.instance.onThresholdPass += PlayAnimation;
-    }
+    
     private void OnDisable()
     {
         DistanceManager.instance.onThresholdPass -= PlayAnimation;
@@ -21,6 +17,7 @@ public class Oiseau : MonoBehaviour
 
     private void Start()
     {
+        DistanceManager.instance.onThresholdPass += PlayAnimation;
         animator.enabled = false;
         animator = GetComponent<Animator>();
     }
