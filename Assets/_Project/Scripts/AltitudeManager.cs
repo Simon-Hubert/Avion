@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class AltitudeManager : MonoBehaviour
@@ -13,8 +12,11 @@ public class AltitudeManager : MonoBehaviour
     [SerializeField] private int _displayedAltitude;
     private float _currentAltitude;
 
-    [SerializeField] private float _crashSpeed = 1f;
-    [SerializeField] private float _riseSpeed = 1f;
+    [SerializeField] private float _crashSpeed;
+    [SerializeField] private float _malusCrashSpeed;
+    [SerializeField] private float _riseSpeed;
+
+    [SerializeField] private GameObject _finalScoreText;
 
     [SerializeField] private TextMeshProUGUI _altitudeText;
 
@@ -41,14 +43,6 @@ public class AltitudeManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            StartFalling();
-        }
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            StartGoingUp();
-        }
         if (_isFalling)
         {
             CurrentAltitude -= _crashSpeed * Time.deltaTime;
@@ -56,7 +50,7 @@ public class AltitudeManager : MonoBehaviour
             {
                 CurrentAltitude = 0;
                 _isFalling = false;
-                GameManager.instance.ChangeGameState(2);
+                StartCoroutine(GameManager.instance.LaunchLeaderBoard(_finalScoreText));
             }
         }
         else if (_isGoingUp)
@@ -83,10 +77,18 @@ public class AltitudeManager : MonoBehaviour
     public IEnumerator UpAltitudeCoroutine()
     {
         StartGoingUp();
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.75f);
         StartFalling();
-    }    
- 
+    }
+
+    public IEnumerator DownAltitudeCoroutine()
+    {
+        float crashSpeedMemory = _crashSpeed;
+        _crashSpeed = _malusCrashSpeed;
+        yield return new WaitForSeconds(1.75f);
+        _crashSpeed = crashSpeedMemory;
+    }
+
     private void DisplayAltitude(int displayedAltitude)
     {
         _altitudeText.text = displayedAltitude.ToString() + "m";

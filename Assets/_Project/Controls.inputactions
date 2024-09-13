@@ -22,6 +22,141 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton1",
+                    "type": "Button",
+                    "id": "ff3261b6-3bac-4335-b465-94a9c0086e36",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton2",
+                    "type": "Button",
+                    "id": "f46f2b15-2a6a-46bb-8bd0-ebf8f93df6fc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton3",
+                    "type": "Button",
+                    "id": "f9aa8ca2-2771-408a-b310-21402c91cdec",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton4",
+                    "type": "Button",
+                    "id": "2cfc1195-90bc-4c5d-8091-153f77933861",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton5",
+                    "type": "Button",
+                    "id": "57f64a5d-8620-4966-a9f8-6cf1e298dd1f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton6",
+                    "type": "Button",
+                    "id": "fb8a362a-98b4-4629-8cc2-e52282c96d2f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton7",
+                    "type": "Button",
+                    "id": "5313b27b-795c-48cd-8e2b-1727d57a65a1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton8",
+                    "type": "Button",
+                    "id": "4943a8d6-4871-421a-bc5c-9892ff346855",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton9",
+                    "type": "Button",
+                    "id": "f60f74ea-70b6-4321-81ce-2d06e01aa594",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton10",
+                    "type": "Button",
+                    "id": "b3bbfab9-d928-49e2-9adc-3d84bf4aca1c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton11",
+                    "type": "Button",
+                    "id": "e56b978c-0d44-4be0-97fa-71a3dbd17964",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton12",
+                    "type": "Button",
+                    "id": "f370e3c7-6c76-472b-9392-d976798e2e72",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton13",
+                    "type": "Button",
+                    "id": "94a86c01-d12a-4d1e-8310-d3bcc826482d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton14",
+                    "type": "Button",
+                    "id": "31291000-7755-4105-b555-201885615e13",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "NumpadButton15",
+                    "type": "Button",
+                    "id": "2381c2a2-5fd6-40a7-a952-58dabf2c3440",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -137,6 +272,39 @@
                 },
                 {
                     "name": "",
+                    "id": "5b465050-9dac-4203-9d72-8c7f324f9c65",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QTEButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a97456a-7972-4c36-9360-b44dbc1b492e",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QTEButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "58dc4ce4-e20d-4ce7-bb64-26ad0648f37a",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QTEButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "7e570450-cef2-465f-9413-4ff7e0b78d40",
                     "path": "<Keyboard>/1",
                     "interactions": "",
@@ -242,6 +410,171 @@
                     "processors": "",
                     "groups": "",
                     "action": "StartEvents",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a1270eb0-908f-4747-a7fc-7d9aad1234e6",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b22f53a3-2e87-40cf-bd25-18bde8be549d",
+                    "path": "<HID::1532-201>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb34fd19-a770-4ff6-9239-9111b6fccde8",
+                    "path": "<HID::1532-201>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3a47795-13f0-48c0-b7ad-14862b21126d",
+                    "path": "<HID::1532-201>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40ed81a6-5722-4dc4-8ece-ccdaeaa1a3b8",
+                    "path": "<HID::1532-201>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7ab5713c-1000-453d-9fa8-2d5e2ffacf08",
+                    "path": "<HID::1532-201>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "27c2e5ed-cdf9-4249-91a5-2f4d4d60072e",
+                    "path": "<HID::1532-201>/button7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc8679dc-04e8-496d-8817-28e51474a8b0",
+                    "path": "<HID::1532-201>/button8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dad91b23-5f9b-4f34-8e7d-b5d2abfff74d",
+                    "path": "<HID::1532-201>/button9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton9",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2136a253-a923-429a-9112-d1a350b4cc3c",
+                    "path": "<HID::1532-201>/button10",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton10",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70574731-2414-4bdb-833a-8c99b8ee874a",
+                    "path": "<HID::1532-201>/button11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton11",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8a99bc2f-ca16-4f8f-b241-608acec8ffc4",
+                    "path": "<HID::1532-201>/button12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton12",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2c2f414c-5d3e-4ee8-ae8b-7586803fb943",
+                    "path": "<HID::1532-201>/button13",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton13",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3aa31574-6b84-44ae-999d-83c61d0db7ec",
+                    "path": "<HID::1532-201>/button14",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton14",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ecadba69-6b0c-4efb-acfe-e41641273253",
+                    "path": "<HID::1532-201>/button15",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NumpadButton15",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

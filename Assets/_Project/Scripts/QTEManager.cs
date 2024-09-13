@@ -9,10 +9,7 @@ public class QTEManager : MonoBehaviour
 {
     public static QTEManager instance;
 
-    [SerializeField] private TextMeshProUGUI _qteText;
     [SerializeField] private float _qteDuration = 3f;
-    [SerializeField] private GameObject _successUI;
-    [SerializeField] private GameObject _failureUI;
 
     [SerializeField] private Avion _avion;
 
@@ -54,7 +51,7 @@ public class QTEManager : MonoBehaviour
         {
             if (CheckKeyPress())
             {
-                StartCoroutine(QTESuccess());
+                QTESuccess();
             } 
         }
     }
@@ -63,55 +60,36 @@ public class QTEManager : MonoBehaviour
     {
         switch (_selectedKey)
         {
-            case "buttonNorth":
-                return _qteAction.triggered && Gamepad.current.buttonNorth.wasPressedThisFrame;
-            case "buttonWest":
-                return _qteAction.triggered && Gamepad.current.buttonWest.wasPressedThisFrame;
-            case "buttonSouth":
-                return _qteAction.triggered && Gamepad.current.buttonSouth.wasPressedThisFrame;
-            case "buttonEast":
-                return _qteAction.triggered && Gamepad.current.buttonEast.wasPressedThisFrame;
+            case "enter":
+                return _qteAction.triggered && Keyboard.current.enterKey.wasPressedThisFrame;
             case "left":
                 return _qteAction.triggered && Keyboard.current.leftArrowKey.wasPressedThisFrame;
             case "right":
                 return _qteAction.triggered && Keyboard.current.rightArrowKey.wasPressedThisFrame;
-            case "b":
-                return _qteAction.triggered && Keyboard.current.bKey.wasPressedThisFrame;
-            case "r":
-                return _qteAction.triggered && Keyboard.current.rKey.wasPressedThisFrame;
             // Ajouter d'autres cas si nécessaire
             default:
                 return false;
         }
     }
 
-    private IEnumerator QTESuccess()
+    public void QTESuccess()
     {
         _qteCompleted = true;
         _qteActive = false;
-        _successUI.SetActive(true);
-        _failureUI.SetActive(false);
         Debug.Log("QTE Success!");
         FeedbackManager.instance.Success();
         _avion.Stabilize();
         StartCoroutine(AltitudeManager.instance.UpAltitudeCoroutine());
-        yield return new WaitForSeconds(3f);
-        _successUI.SetActive(false);
-        _qteText.text = "";
     }
 
-    private IEnumerator QTEFailure()
+    public void QTEFailure()
     {
         _qteCompleted = true;
         _qteActive = false;
-        _successUI.SetActive(false);
-        _failureUI.SetActive(true);
         Debug.Log("QTE Failed!");
         FeedbackManager.instance.Failure();
         _avion.Stabilize();
-        yield return new WaitForSeconds(3f);
-        _failureUI.SetActive(false);
-        _qteText.text = "";
+        StartCoroutine(AltitudeManager.instance.DownAltitudeCoroutine());
     }
 
     private IEnumerator QTETimer()
@@ -119,13 +97,12 @@ public class QTEManager : MonoBehaviour
         yield return new WaitForSeconds(_qteDuration);
         if (!_qteCompleted)
         {
-            StartCoroutine(QTEFailure());
+            QTEFailure();
         }
     }
 
     public void StartQTEWithKey(string keyToPress)
     {
-        _qteText.text = "Press " + keyToPress.ToUpper() + "!";
 
         _qteCompleted = false;
         _qteActive = true;
@@ -143,35 +120,13 @@ public class QTEManager : MonoBehaviour
         {
             case 0:
                 //on penche sur la gauche
-                _qteText.text = "On penche sur la gauche!";
                 _avion.Roll(false);
                 _selectedKey = "right";
                 break;
             case 1:
                 //on penche sur la droite
-                _qteText.text = "On penche sur la droite!";
                 _avion.Roll(true);
                 _selectedKey = "left";
-                break;
-        }
-        StartCoroutine(QTETimer());
-    }
-
-    public void StartBlueRedQTE(int randomValue)
-    {
-        _qteCompleted = false;
-        _qteActive = true;
-        switch (randomValue)
-        {
-            case 0:
-                //blue
-                _qteText.text = "Bleu";
-                _selectedKey = "b";
-                break;
-            case 1:
-                //red
-                _qteText.text = "Rouge";
-                _selectedKey = "r";
                 break;
         }
         StartCoroutine(QTETimer());

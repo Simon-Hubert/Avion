@@ -56,5 +56,6 @@ public class FeedbackManager : MonoBehaviour
             yield return 0;
         }
         vignette.enabled.Override(false);
+        EventManager.instance._canLaunchEvent = true;
     }
 }

@@ -44,6 +44,141 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton1"",
+                    ""type"": ""Button"",
+                    ""id"": ""ff3261b6-3bac-4335-b465-94a9c0086e36"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton2"",
+                    ""type"": ""Button"",
+                    ""id"": ""f46f2b15-2a6a-46bb-8bd0-ebf8f93df6fc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton3"",
+                    ""type"": ""Button"",
+                    ""id"": ""f9aa8ca2-2771-408a-b310-21402c91cdec"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton4"",
+                    ""type"": ""Button"",
+                    ""id"": ""2cfc1195-90bc-4c5d-8091-153f77933861"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton5"",
+                    ""type"": ""Button"",
+                    ""id"": ""57f64a5d-8620-4966-a9f8-6cf1e298dd1f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton6"",
+                    ""type"": ""Button"",
+                    ""id"": ""fb8a362a-98b4-4629-8cc2-e52282c96d2f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton7"",
+                    ""type"": ""Button"",
+                    ""id"": ""5313b27b-795c-48cd-8e2b-1727d57a65a1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton8"",
+                    ""type"": ""Button"",
+                    ""id"": ""4943a8d6-4871-421a-bc5c-9892ff346855"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton9"",
+                    ""type"": ""Button"",
+                    ""id"": ""f60f74ea-70b6-4321-81ce-2d06e01aa594"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton10"",
+                    ""type"": ""Button"",
+                    ""id"": ""b3bbfab9-d928-49e2-9adc-3d84bf4aca1c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton11"",
+                    ""type"": ""Button"",
+                    ""id"": ""e56b978c-0d44-4be0-97fa-71a3dbd17964"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton12"",
+                    ""type"": ""Button"",
+                    ""id"": ""f370e3c7-6c76-472b-9392-d976798e2e72"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton13"",
+                    ""type"": ""Button"",
+                    ""id"": ""94a86c01-d12a-4d1e-8310-d3bcc826482d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton14"",
+                    ""type"": ""Button"",
+                    ""id"": ""31291000-7755-4105-b555-201885615e13"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NumpadButton15"",
+                    ""type"": ""Button"",
+                    ""id"": ""2381c2a2-5fd6-40a7-a952-58dabf2c3440"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -150,6 +285,39 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""2f4854cd-197b-4ce5-9505-9822400eb636"",
                     ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""QTEButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5b465050-9dac-4203-9d72-8c7f324f9c65"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""QTEButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0a97456a-7972-4c36-9360-b44dbc1b492e"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""QTEButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""58dc4ce4-e20d-4ce7-bb64-26ad0648f37a"",
+                    ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -266,6 +434,171 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""StartEvents"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a1270eb0-908f-4747-a7fc-7d9aad1234e6"",
+                    ""path"": ""<Joystick>/trigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b22f53a3-2e87-40cf-bd25-18bde8be549d"",
+                    ""path"": ""<HID::1532-201>/button2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cb34fd19-a770-4ff6-9239-9111b6fccde8"",
+                    ""path"": ""<HID::1532-201>/button3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a3a47795-13f0-48c0-b7ad-14862b21126d"",
+                    ""path"": ""<HID::1532-201>/button4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""40ed81a6-5722-4dc4-8ece-ccdaeaa1a3b8"",
+                    ""path"": ""<HID::1532-201>/button5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7ab5713c-1000-453d-9fa8-2d5e2ffacf08"",
+                    ""path"": ""<HID::1532-201>/button6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton6"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""27c2e5ed-cdf9-4249-91a5-2f4d4d60072e"",
+                    ""path"": ""<HID::1532-201>/button7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton7"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bc8679dc-04e8-496d-8817-28e51474a8b0"",
+                    ""path"": ""<HID::1532-201>/button8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton8"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dad91b23-5f9b-4f34-8e7d-b5d2abfff74d"",
+                    ""path"": ""<HID::1532-201>/button9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton9"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2136a253-a923-429a-9112-d1a350b4cc3c"",
+                    ""path"": ""<HID::1532-201>/button10"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton10"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""70574731-2414-4bdb-833a-8c99b8ee874a"",
+                    ""path"": ""<HID::1532-201>/button11"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton11"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8a99bc2f-ca16-4f8f-b241-608acec8ffc4"",
+                    ""path"": ""<HID::1532-201>/button12"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton12"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2c2f414c-5d3e-4ee8-ae8b-7586803fb943"",
+                    ""path"": ""<HID::1532-201>/button13"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton13"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3aa31574-6b84-44ae-999d-83c61d0db7ec"",
+                    ""path"": ""<HID::1532-201>/button14"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton14"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ecadba69-6b0c-4efb-acfe-e41641273253"",
+                    ""path"": ""<HID::1532-201>/button15"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NumpadButton15"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -276,6 +609,21 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_QTE = asset.FindActionMap("QTE", throwIfNotFound: true);
         m_QTE_QTEButton = m_QTE.FindAction("QTEButton", throwIfNotFound: true);
         m_QTE_StartEvents = m_QTE.FindAction("StartEvents", throwIfNotFound: true);
+        m_QTE_NumpadButton1 = m_QTE.FindAction("NumpadButton1", throwIfNotFound: true);
+        m_QTE_NumpadButton2 = m_QTE.FindAction("NumpadButton2", throwIfNotFound: true);
+        m_QTE_NumpadButton3 = m_QTE.FindAction("NumpadButton3", throwIfNotFound: true);
+        m_QTE_NumpadButton4 = m_QTE.FindAction("NumpadButton4", throwIfNotFound: true);
+        m_QTE_NumpadButton5 = m_QTE.FindAction("NumpadButton5", throwIfNotFound: true);
+        m_QTE_NumpadButton6 = m_QTE.FindAction("NumpadButton6", throwIfNotFound: true);
+        m_QTE_NumpadButton7 = m_QTE.FindAction("NumpadButton7", throwIfNotFound: true);
+        m_QTE_NumpadButton8 = m_QTE.FindAction("NumpadButton8", throwIfNotFound: true);
+        m_QTE_NumpadButton9 = m_QTE.FindAction("NumpadButton9", throwIfNotFound: true);
+        m_QTE_NumpadButton10 = m_QTE.FindAction("NumpadButton10", throwIfNotFound: true);
+        m_QTE_NumpadButton11 = m_QTE.FindAction("NumpadButton11", throwIfNotFound: true);
+        m_QTE_NumpadButton12 = m_QTE.FindAction("NumpadButton12", throwIfNotFound: true);
+        m_QTE_NumpadButton13 = m_QTE.FindAction("NumpadButton13", throwIfNotFound: true);
+        m_QTE_NumpadButton14 = m_QTE.FindAction("NumpadButton14", throwIfNotFound: true);
+        m_QTE_NumpadButton15 = m_QTE.FindAction("NumpadButton15", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -339,12 +687,42 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private List<IQTEActions> m_QTEActionsCallbackInterfaces = new List<IQTEActions>();
     private readonly InputAction m_QTE_QTEButton;
     private readonly InputAction m_QTE_StartEvents;
+    private readonly InputAction m_QTE_NumpadButton1;
+    private readonly InputAction m_QTE_NumpadButton2;
+    private readonly InputAction m_QTE_NumpadButton3;
+    private readonly InputAction m_QTE_NumpadButton4;
+    private readonly InputAction m_QTE_NumpadButton5;
+    private readonly InputAction m_QTE_NumpadButton6;
+    private readonly InputAction m_QTE_NumpadButton7;
+    private readonly InputAction m_QTE_NumpadButton8;
+    private readonly InputAction m_QTE_NumpadButton9;
+    private readonly InputAction m_QTE_NumpadButton10;
+    private readonly InputAction m_QTE_NumpadButton11;
+    private readonly InputAction m_QTE_NumpadButton12;
+    private readonly InputAction m_QTE_NumpadButton13;
+    private readonly InputAction m_QTE_NumpadButton14;
+    private readonly InputAction m_QTE_NumpadButton15;
     public struct QTEActions
     {
         private @Controls m_Wrapper;
         public QTEActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @QTEButton => m_Wrapper.m_QTE_QTEButton;
         public InputAction @StartEvents => m_Wrapper.m_QTE_StartEvents;
+        public InputAction @NumpadButton1 => m_Wrapper.m_QTE_NumpadButton1;
+        public InputAction @NumpadButton2 => m_Wrapper.m_QTE_NumpadButton2;
+        public InputAction @NumpadButton3 => m_Wrapper.m_QTE_NumpadButton3;
+        public InputAction @NumpadButton4 => m_Wrapper.m_QTE_NumpadButton4;
+        public InputAction @NumpadButton5 => m_Wrapper.m_QTE_NumpadButton5;
+        public InputAction @NumpadButton6 => m_Wrapper.m_QTE_NumpadButton6;
+        public InputAction @NumpadButton7 => m_Wrapper.m_QTE_NumpadButton7;
+        public InputAction @NumpadButton8 => m_Wrapper.m_QTE_NumpadButton8;
+        public InputAction @NumpadButton9 => m_Wrapper.m_QTE_NumpadButton9;
+        public InputAction @NumpadButton10 => m_Wrapper.m_QTE_NumpadButton10;
+        public InputAction @NumpadButton11 => m_Wrapper.m_QTE_NumpadButton11;
+        public InputAction @NumpadButton12 => m_Wrapper.m_QTE_NumpadButton12;
+        public InputAction @NumpadButton13 => m_Wrapper.m_QTE_NumpadButton13;
+        public InputAction @NumpadButton14 => m_Wrapper.m_QTE_NumpadButton14;
+        public InputAction @NumpadButton15 => m_Wrapper.m_QTE_NumpadButton15;
         public InputActionMap Get() { return m_Wrapper.m_QTE; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -360,6 +738,51 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @StartEvents.started += instance.OnStartEvents;
             @StartEvents.performed += instance.OnStartEvents;
             @StartEvents.canceled += instance.OnStartEvents;
+            @NumpadButton1.started += instance.OnNumpadButton1;
+            @NumpadButton1.performed += instance.OnNumpadButton1;
+            @NumpadButton1.canceled += instance.OnNumpadButton1;
+            @NumpadButton2.started += instance.OnNumpadButton2;
+            @NumpadButton2.performed += instance.OnNumpadButton2;
+            @NumpadButton2.canceled += instance.OnNumpadButton2;
+            @NumpadButton3.started += instance.OnNumpadButton3;
+            @NumpadButton3.performed += instance.OnNumpadButton3;
+            @NumpadButton3.canceled += instance.OnNumpadButton3;
+            @NumpadButton4.started += instance.OnNumpadButton4;
+            @NumpadButton4.performed += instance.OnNumpadButton4;
+            @NumpadButton4.canceled += instance.OnNumpadButton4;
+            @NumpadButton5.started += instance.OnNumpadButton5;
+            @NumpadButton5.performed += instance.OnNumpadButton5;
+            @NumpadButton5.canceled += instance.OnNumpadButton5;
+            @NumpadButton6.started += instance.OnNumpadButton6;
+            @NumpadButton6.performed += instance.OnNumpadButton6;
+            @NumpadButton6.canceled += instance.OnNumpadButton6;
+            @NumpadButton7.started += instance.OnNumpadButton7;
+            @NumpadButton7.performed += instance.OnNumpadButton7;
+            @NumpadButton7.canceled += instance.OnNumpadButton7;
+            @NumpadButton8.started += instance.OnNumpadButton8;
+            @NumpadButton8.performed += instance.OnNumpadButton8;
+            @NumpadButton8.canceled += instance.OnNumpadButton8;
+            @NumpadButton9.started += instance.OnNumpadButton9;
+            @NumpadButton9.performed += instance.OnNumpadButton9;
+            @NumpadButton9.canceled += instance.OnNumpadButton9;
+            @NumpadButton10.started += instance.OnNumpadButton10;
+            @NumpadButton10.performed += instance.OnNumpadButton10;
+            @NumpadButton10.canceled += instance.OnNumpadButton10;
+            @NumpadButton11.started += instance.OnNumpadButton11;
+            @NumpadButton11.performed += instance.OnNumpadButton11;
+            @NumpadButton11.canceled += instance.OnNumpadButton11;
+            @NumpadButton12.started += instance.OnNumpadButton12;
+            @NumpadButton12.performed += instance.OnNumpadButton12;
+            @NumpadButton12.canceled += instance.OnNumpadButton12;
+            @NumpadButton13.started += instance.OnNumpadButton13;
+            @NumpadButton13.performed += instance.OnNumpadButton13;
+            @NumpadButton13.canceled += instance.OnNumpadButton13;
+            @NumpadButton14.started += instance.OnNumpadButton14;
+            @NumpadButton14.performed += instance.OnNumpadButton14;
+            @NumpadButton14.canceled += instance.OnNumpadButton14;
+            @NumpadButton15.started += instance.OnNumpadButton15;
+            @NumpadButton15.performed += instance.OnNumpadButton15;
+            @NumpadButton15.canceled += instance.OnNumpadButton15;
         }
 
         private void UnregisterCallbacks(IQTEActions instance)
@@ -370,6 +793,51 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @StartEvents.started -= instance.OnStartEvents;
             @StartEvents.performed -= instance.OnStartEvents;
             @StartEvents.canceled -= instance.OnStartEvents;
+            @NumpadButton1.started -= instance.OnNumpadButton1;
+            @NumpadButton1.performed -= instance.OnNumpadButton1;
+            @NumpadButton1.canceled -= instance.OnNumpadButton1;
+            @NumpadButton2.started -= instance.OnNumpadButton2;
+            @NumpadButton2.performed -= instance.OnNumpadButton2;
+            @NumpadButton2.canceled -= instance.OnNumpadButton2;
+            @NumpadButton3.started -= instance.OnNumpadButton3;
+            @NumpadButton3.performed -= instance.OnNumpadButton3;
+            @NumpadButton3.canceled -= instance.OnNumpadButton3;
+            @NumpadButton4.started -= instance.OnNumpadButton4;
+            @NumpadButton4.performed -= instance.OnNumpadButton4;
+            @NumpadButton4.canceled -= instance.OnNumpadButton4;
+            @NumpadButton5.started -= instance.OnNumpadButton5;
+            @NumpadButton5.performed -= instance.OnNumpadButton5;
+            @NumpadButton5.canceled -= instance.OnNumpadButton5;
+            @NumpadButton6.started -= instance.OnNumpadButton6;
+            @NumpadButton6.performed -= instance.OnNumpadButton6;
+            @NumpadButton6.canceled -= instance.OnNumpadButton6;
+            @NumpadButton7.started -= instance.OnNumpadButton7;
+            @NumpadButton7.performed -= instance.OnNumpadButton7;
+            @NumpadButton7.canceled -= instance.OnNumpadButton7;
+            @NumpadButton8.started -= instance.OnNumpadButton8;
+            @NumpadButton8.performed -= instance.OnNumpadButton8;
+            @NumpadButton8.canceled -= instance.OnNumpadButton8;
+            @NumpadButton9.started -= instance.OnNumpadButton9;
+            @NumpadButton9.performed -= instance.OnNumpadButton9;
+            @NumpadButton9.canceled -= instance.OnNumpadButton9;
+            @NumpadButton10.started -= instance.OnNumpadButton10;
+            @NumpadButton10.performed -= instance.OnNumpadButton10;
+            @NumpadButton10.canceled -= instance.OnNumpadButton10;
+            @NumpadButton11.started -= instance.OnNumpadButton11;
+            @NumpadButton11.performed -= instance.OnNumpadButton11;
+            @NumpadButton11.canceled -= instance.OnNumpadButton11;
+            @NumpadButton12.started -= instance.OnNumpadButton12;
+            @NumpadButton12.performed -= instance.OnNumpadButton12;
+            @NumpadButton12.canceled -= instance.OnNumpadButton12;
+            @NumpadButton13.started -= instance.OnNumpadButton13;
+            @NumpadButton13.performed -= instance.OnNumpadButton13;
+            @NumpadButton13.canceled -= instance.OnNumpadButton13;
+            @NumpadButton14.started -= instance.OnNumpadButton14;
+            @NumpadButton14.performed -= instance.OnNumpadButton14;
+            @NumpadButton14.canceled -= instance.OnNumpadButton14;
+            @NumpadButton15.started -= instance.OnNumpadButton15;
+            @NumpadButton15.performed -= instance.OnNumpadButton15;
+            @NumpadButton15.canceled -= instance.OnNumpadButton15;
         }
 
         public void RemoveCallbacks(IQTEActions instance)
@@ -391,5 +859,20 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     {
         void OnQTEButton(InputAction.CallbackContext context);
         void OnStartEvents(InputAction.CallbackContext context);
+        void OnNumpadButton1(InputAction.CallbackContext context);
+        void OnNumpadButton2(InputAction.CallbackContext context);
+        void OnNumpadButton3(InputAction.CallbackContext context);
+        void OnNumpadButton4(InputAction.CallbackContext context);
+        void OnNumpadButton5(InputAction.CallbackContext context);
+        void OnNumpadButton6(InputAction.CallbackContext context);
+        void OnNumpadButton7(InputAction.CallbackContext context);
+        void OnNumpadButton8(InputAction.CallbackContext context);
+        void OnNumpadButton9(InputAction.CallbackContext context);
+        void OnNumpadButton10(InputAction.CallbackContext context);
+        void OnNumpadButton11(InputAction.CallbackContext context);
+        void OnNumpadButton12(InputAction.CallbackContext context);
+        void OnNumpadButton13(InputAction.CallbackContext context);
+        void OnNumpadButton14(InputAction.CallbackContext context);
+        void OnNumpadButton15(InputAction.CallbackContext context);
     }
 }
