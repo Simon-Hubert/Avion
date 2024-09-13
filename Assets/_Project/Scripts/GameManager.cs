@@ -1,3 +1,4 @@
+using Sounds;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public GameState _gameState;
+
+    public int _score;
 
     private void Awake()
     {
@@ -47,13 +50,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public IEnumerator LaunchLeaderBoard(GameObject finalScoreText)
+    public IEnumerator LaunchLeaderBoard(GameObject blackScreen)
     {
-        finalScoreText.SetActive(true);
-        finalScoreText.GetComponent<TextMeshProUGUI>().text = "Final score : " + DistanceManager.instance._distance;
-        yield return new WaitForSeconds(4f);
-        finalScoreText.GetComponent<TextMeshProUGUI>().text = "";
-        finalScoreText.SetActive(false);
+        SoundManager.Instance.PlaySoundType(SoundType.AlertCrash);
+        _score = DistanceManager.instance._distance;
+        blackScreen.SetActive(true);
+        yield return new WaitForSeconds(2.5f);
         ChangeGameState(2);
     }
 
