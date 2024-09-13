@@ -3759,6 +3759,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oiseau
       objectReference: {fileID: 0}
+    - target: {fileID: 7681234482400936112, guid: 21e302f6f8c43f84395ab41363b5b22b, type: 3}
+      propertyPath: m_text
+      value: 10 km
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681234482400936112, guid: 21e302f6f8c43f84395ab41363b5b22b, type: 3}
+      propertyPath: m_fontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681234482400936112, guid: 21e302f6f8c43f84395ab41363b5b22b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5a63cfffdab40784485bc0ca135c2842, type: 2}
+    - target: {fileID: 7681234482400936112, guid: 21e302f6f8c43f84395ab41363b5b22b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681234482400936112, guid: 21e302f6f8c43f84395ab41363b5b22b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3384480853748942211, guid: 5a63cfffdab40784485bc0ca135c2842, type: 2}
+    - target: {fileID: 7681234482400936112, guid: 21e302f6f8c43f84395ab41363b5b22b, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3833,8 +3857,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5a63cfffdab40784485bc0ca135c2842, type: 2}
+  m_sharedMaterial: {fileID: 3384480853748942211, guid: 5a63cfffdab40784485bc0ca135c2842, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
