@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Sounds;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -50,6 +51,7 @@ public class EventManager : MonoBehaviour
             case 0:
                 //Evenement IRL
                 StartQTE("enter");
+                SoundManager.Instance.PlaySoundType(SoundType.PlaneHotess);
                 break;
             case 1:
                 //Gyroscope
