@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using NaughtyAttributes;
+using Sounds;
 
 public class FeedbackManager : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class FeedbackManager : MonoBehaviour
         vignette.enabled.Override(true);
         vignette.color.Override(Color.green);
         StartCoroutine(Reset());
+        SoundManager.Instance.PlaySoundType(SoundType.MiniGameSuccess);
     }
 
     [Button]
@@ -44,6 +46,7 @@ public class FeedbackManager : MonoBehaviour
         vignette.enabled.Override(true);
         vignette.color.Override(Color.red);
         StartCoroutine(Reset());
+        SoundManager.Instance.PlaySoundType(SoundType.MiniGameFailure);
     }
      
     IEnumerator Reset()

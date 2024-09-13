@@ -7,16 +7,27 @@ using Random = UnityEngine.Random;
 
 public class NumpadManager : MonoBehaviour
 {
+    public static NumpadManager Instance { get; private set; }
+    
     public Key specialKey = Key.LeftCtrl;
     public NumpadButton[] numpadButtons = Array.Empty<NumpadButton>();
 
     private bool _isPressing = false;
     private NumpadButton _currentButton;
-    
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Debug.LogError("plus d'une instance de NumpadManager dans la scene");
+            return;
+        }
+        Instance = this;
+    }
+
     void Start()
     {
         numpadButtons = GetComponentsInChildren<NumpadButton>();
-        ChooseButton();
 
         foreach (NumpadButton numpadButton in numpadButtons)
         {
@@ -44,5 +55,27 @@ public class NumpadManager : MonoBehaviour
     {
         NumpadButton randomButton = numpadButtons[Random.Range(0, numpadButtons.Length)];
         randomButton.isOn = true;
+    }
+
+    public bool IsThereAButtonTurnedOn()
+    {
+        bool result = false;
+        foreach (NumpadButton numpadButton in numpadButtons)
+        {
+            if (numpadButton.isOn)
+            {
+                result = true;
+            }
+        }
+
+        return result;
+    }
+
+    public void TurnOffButton()
+    {
+        foreach (NumpadButton numpadButton in numpadButtons)
+        {
+            numpadButton.isOn = false;
+        }
     }
 }
