@@ -2807,9 +2807,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startingAltitude: 10000
   _displayedAltitude: 0
-  _crashSpeed: 200
-  _malusCrashSpeed: 700
-  _riseSpeed: 350
+  _crashSpeed: 250
+  _malusCrashSpeed: 400
+  _riseSpeed: 500
   _finalScoreText: {fileID: 764404990}
   _altitudeText: {fileID: 2050779498}
 --- !u!1 &1667863136

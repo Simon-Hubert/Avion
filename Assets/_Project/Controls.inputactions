@@ -416,7 +416,7 @@
                 {
                     "name": "",
                     "id": "a1270eb0-908f-4747-a7fc-7d9aad1234e6",
-                    "path": "<Joystick>/trigger",
+                    "path": "<HID::1532-201>/button16",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

@@ -53,9 +53,12 @@ public class NumpadManager : MonoBehaviour
 
     public void ChooseButton()
     {
-        NumpadButton randomButton = numpadButtons[Random.Range(0, numpadButtons.Length)];
-        randomButton.isOn = true;
-        Invoke(nameof(TooManyTime), 10f);
+        for (var i = 1; i < Random.Range(2, 4); i++)
+        {
+            NumpadButton randomButton = numpadButtons[Random.Range(0, numpadButtons.Length)];
+            randomButton.isOn = true;   
+        }
+        //Invoke(nameof(TooManyTime), 10f);
     }
 
     public bool IsThereAButtonTurnedOn()
